@@ -21,13 +21,14 @@ function App() {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          required
           value={item}
           onChange={(e) => setItem(e.target.value)}
         />
         <button type="submit">add task</button>
       </form>
       <ul className="list-container">
-        <p className={todo.length === 0 ? "red-title" : "blue-title"}>
+        <p className={todo.length === 0 ? "empty-list" : "not-empty-list"}>
           no todo found
         </p>
         {todo.map((todo, index) => (

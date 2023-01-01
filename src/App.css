@@ -103,7 +103,7 @@ form button:hover {
   padding: 0.5rem;
 }
 
-.red-title {
+.empty-list {
   color: var(--black-2);
   background-color: var(--gray-2);
   text-align: center;
@@ -115,6 +115,6 @@ form button:hover {
   text-transform: capitalize;
 }
 
-.blue-title {
+.not-empty-list {
   display: none;
 }
