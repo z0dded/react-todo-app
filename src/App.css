@@ -61,7 +61,7 @@ form button:hover {
 
 .list-container {
   background-color: var(--bg-2);
-  padding: 1.4rem 1.2rem;
+  padding: 1.2rem 1.1rem;
   width: 45rem;
   list-style-type: none;
   border-radius: 12px;
@@ -75,32 +75,13 @@ form button:hover {
   color: var(--black-2);
   padding: 0.8rem;
   border-radius: 4px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   word-break: break-all;
   margin-bottom: 1.2rem;
 }
 
 .list-container li:last-child {
   margin-bottom: 0;
-}
-
-.icon-trash {
-  background-color: var(--gray-1);
-  margin-left: 1rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  color: var(--black-2);
-  transition: background-color 0.3s ease;
-}
-
-.icon-trash:hover {
-  background-color: var(--gray-2);
-  cursor: pointer;
-}
-
-.icon-trash i {
-  padding: 0.5rem;
 }
 
 .empty-list {
@@ -117,4 +98,99 @@ form button:hover {
 
 .not-empty-list {
   display: none;
+}
+
+.buttons {
+  margin-left: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.icon {
+  background-color: var(--gray-1);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--black-2);
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: var(--gray-2);
+  cursor: pointer;
+}
+
+.icon i {
+  padding: 0.5rem;
+}
+
+.hidden-modal {
+  display: none;
+}
+
+.modal {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--bg-2);
+  width: 30vw;
+  padding: 20px;
+  color: var(--black-1);
+  border-radius: 8px;
+}
+
+.modal-content h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-content label {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content input {
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem;
+  color: var(--black-2);
+  font-size: 1.25rem;
+  border: none;
+  height: 2.8rem;
+  border-radius: 6px;
+}
+
+.modal-content button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-content button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.update-task-btn {
+  background-color: var(--black-1);
+  color: white;
+  margin-right: 1rem;
+}
+
+.cancel-edit-btn {
+  background-color: var(--bg-3);
+  color: var(--black-1);
 }
