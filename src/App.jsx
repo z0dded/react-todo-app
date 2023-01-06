@@ -33,6 +33,7 @@ function App() {
         <input
           type="text"
           required
+          autoFocus
           value={item}
           onChange={(e) => setItem(e.target.value)}
         />
